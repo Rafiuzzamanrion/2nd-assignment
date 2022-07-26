@@ -1,0 +1,303 @@
+body {
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.head {
+    padding-left: 20px;
+    padding-top: 29px;
+    background-color: black;
+    border-radius: 15px;
+    display: flex;
+    width: 90%;
+    height: 750px;
+    justify-content: center;
+
+
+}
+
+.title {
+    font-size: 60px;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(190, 28, 28), 0 0 25px rgb(0, 255, 170), 0 0 5px rgb(139, 0, 23);
+}
+
+.para {
+    color: white;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 5px red;
+
+}
+
+.fa-solid {
+    padding-left: 10px;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.new {
+    background-color: aqua;
+    width: 250px;
+    height: 320px;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.fixure {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.head img {
+    width: 100%;
+
+}
+
+.button {
+
+    text-decoration: none;
+    background-image: linear-gradient(tomato, red);
+    border-radius: 10px 10px;
+    padding: 20px 20px;
+    font-weight: 800px;
+    color: white;
+    width: 1000px;
+    height: 700px;
+    text-align: center;
+}
+
+.button-2 {
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(tomato, red);
+    width: 180px;
+    height: 50px;
+    padding-left: 25px;
+    padding-top: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+
+}
+
+#blog {
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(blue, red);
+    width: 180px;
+    height: 50px;
+
+    padding-left: 25px;
+    padding-top: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+
+}
+
+.main-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+
+}
+
+
+
+
+.player {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+
+}
+
+.player img {
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+.mother-div {
+    display: flex;
+
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+
+}
+
+.list {}
+
+.anchor {
+    text-decoration: none;
+    padding-left: 20px;
+    color: white;
+}
+
+footer {
+    background-color: black;
+    height: 300px;
+    text-align: center;
+    margin-top: 50px;
+    justify-content: center;
+
+
+}
+
+.last {
+    color: white;
+    font-weight: 900px;
+    padding-top: 20px;
+}
+
+#icon {
+    display: none;
+}
+
+#view {
+    display: none;
+}
+
+
+/* ------------------------
+media queries
+------------------------- */
+
+/* -------mobile devices-------- */
+@media screen and (max-width:688px) {
+
+    .main-div {
+
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+
+    }
+
+    .mother-div {
+
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+
+
+    }
+
+    .head {
+        flex-direction: column;
+        width: 100%;
+        height: 1500px;
+    }
+
+
+
+
+    .fixure {
+
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {}
+
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #icon {
+        display: flex;
+        flex-direction: column;
+        color: white;
+
+    }
+
+    #view {
+        display: none;
+    }
+
+}
+
+/* tablet device */
+@media screen and (min-width:689px) and (max-width:991px) {
+    .main-div {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .head {
+        flex-direction: row;
+        width: 100%;
+        height: 1000px;
+    }
+
+    .mother-div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+
+
+
+
+    }
+
+    .fixure {
+
+        display: flex;
+        flex-direction: row;
+
+
+    }
+
+    .new {
+        background-color: aqua;
+        width: 700px;
+        height: 120px;
+
+    }
+
+    .button-2 {
+        margin-left: 10px;
+    }
+
+    #blog {
+        margin-left: 10px;
+    }
+
+    #view {
+        display: block;
+        text-decoration: none;
+        background-image: linear-gradient(tomato, red);
+        border-radius: 10px 10px;
+        color: white;
+        width: 200px;
+        height: 60px;
+        text-align: center;
+        padding-top: 30px;
+        font-weight: 900;
+        font-size: large;
+
+
+    }
+
+    #hide {
+        display: none;
+    }
+
+
+}
